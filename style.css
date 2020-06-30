@@ -1,0 +1,498 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+/* *********************************************** *//* ************************************************* */
+/* ****************************************** ROBE GENERALI ********************************************* */
+/* *********************************************** *//* ************************************************* */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #073C5A;
+      background-image: linear-gradient(to bottom, #073C5A, 15vh, #d2dbdc 15vh, #EFF3F2 100%);
+}
+
+.clearfix:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a {
+  text-decoration: none;
+  color: #073C5A;
+}
+
+a:hover, a:active, a:focus {
+    color: #073C5A;
+    text-shadow: 1px 1px #000;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+em {
+  color: black;
+}
+/* *********************************************** *//* ************************************************* */
+/* ***************************************** HEADER ******************************************* */
+/* *********************************************** *//* ************************************************* */
+
+header {
+  width: 95%;
+  max-width: 1300px;
+  background-color: #EFF3F2;
+  color: #EFF3F2;
+}
+
+.identity {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.nameRole {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #0a2738;
+  height: 180px;
+  width: 70%;
+  padding: 50px;
+}
+
+.nameRole h1 {
+  font-size: 45px;
+}
+.nameRole h2 {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.photoId {
+  width: 30%;
+  height: 180px;
+  background-color: #0a2738;
+  border-left: 75px solid transparent;
+  border-bottom: 180px solid #EFF3F2;
+}
+
+.photoId img{
+  border-radius: 50%;
+  max-width: 160px;
+  width: 100%;
+  height: auto;
+  margin: 10px;
+}
+
+/* *********************************************** *//* ************************************************* */
+/* ***************************************** SEZIONE PRINCIPALE ***************************************** */
+/* *********************************************** *//* ************************************************* */
+main {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  background-color: #EFF3F2;
+  max-width: 1300px;
+}
+
+main i {
+  color: #073C5A;
+}
+/* ***************************************** COMPETENCE ******************************************* */
+.competence{
+  width: 70%;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.competence h6{
+  font-size: 14px;
+  font-weight: normal;
+}
+/* ***************************************** EXPERIENCE ******************************************* */
+.competence .experience {
+  padding: 23px 0px;
+  border-top: 2px solid #073C5A;
+  position: relative;
+  margin-bottom: 30px;
+  width: 90%;
+}
+
+.competence .experience h3{
+  width: 140px;
+  background-color: #EFF3F2;
+  position: absolute;
+  top: -13px;
+  left: 0;
+}
+
+.competence .experience ul li{
+  position: relative;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.competence .experience ul li:hover{
+  transform: scale(1.01);
+  /* background-color: #EFF3F2;
+  box-shadow: 0px 2px 7px rgba(93, 93, 93, 0.5); */
+}
+
+.competence .experience ul li small{
+  position: absolute;
+  top: 0;
+  right: 10px;
+  text-shadow: 1px 0px #073C5A;
+}
+.competence .experience img{
+  height: 18px;
+  width: auto;
+  vertical-align: bottom;
+
+}
+.competence .experience .logoIPM{
+  height: 20px;
+  width: auto;
+  float: right;
+  margin-top: 2px;
+  margin-right: 20px;
+}
+.competence .experience .logoGrande{
+  height: 50px;
+  width: auto;
+  float: right;
+  margin-right: 20px;
+}
+/* ***************************************** FORMATION ******************************************* */
+.competence .formation {
+  padding: 23px 0px;
+  border-top: 2px solid #073C5A;
+  position: relative;
+  margin-bottom: 30px;
+  width: 90%;
+}
+
+.competence .formation h3{
+  width: 150px;
+  background-color: #EFF3F2;
+  position: absolute;
+  top: -13px;
+  left: 0;
+}
+
+.formationContainer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.formationContainer .formationItem {
+  width: calc(50% - 20px);
+  margin-left: 20px;
+}
+.formationContainer .formationItem:hover {
+  transform: scale(1.01);
+}
+.formationContainer .formationItem span{
+  font-weight: bold;
+}
+.formationContainer img{
+  height: 18px;
+  width: auto;
+  vertical-align: middle;
+}
+/* ***************************************** skills ******************************************* */
+.competence .skills {
+  padding-top: 23px;
+  border-top: 2px solid #073C5A;
+  position: relative;
+  margin-bottom: 30px;
+  width: 90%;
+}
+
+.competence .skills h3{
+  width: 70px;
+  background-color: #EFF3F2;
+  position: absolute;
+  top: -13px;
+  left: 0;
+}
+
+.competence .skills ul {
+  margin-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.competence .skills ul li {
+  text-align: center;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  width: calc(100% / 6 - 10px);
+  vertical-align: middle;
+}
+.competence .skills ul li img{
+  height: 50px;
+  max-width: 60px;
+  width: auto;
+  vertical-align: middle;
+
+}
+
+/* ***************************************** INFO ******************************************* */
+.info {
+  width: 30%;
+  min-width: 350px;
+  padding: 50px 30px;
+}
+.info h3{
+  margin-bottom: 5px;
+}
+.info .about {
+  padding: 25px 25px 0px 0px;
+  padding-bottom: 25px;
+  border-bottom: 2px solid #073C5A;
+}
+.info .about p{
+  margin-left: 20px;
+}
+.info .contacts {
+  padding: 25px 25px 0px 0px;
+  padding-bottom: 25px;
+  border-bottom: 2px solid #073C5A;
+}
+.info .references {
+  padding: 25px 25px 0px 0px;
+  padding-bottom: 25px;
+  border-bottom: 2px solid #073C5A;
+}
+.info .contacts ul, .info .references ul {
+  margin-left: 20px;
+}
+/* *********************************************** *//* ************************************************* */
+/* **************************************** FOOTER ***************************************+ */
+/* *********************************************** *//* ************************************************* */
+footer {
+  width: 95%;
+  max-width: 1300px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  background-color:#EFF3F2 ;
+}
+.footerDecoration{
+  width: 30%;
+  height: 40px;
+  border-left: 23px solid transparent;
+  border-bottom: 40px solid #0a2738;
+}
+/* *********************************************** *//* ************************************************* */
+/* *************************************** AGGIUNTA DI MEDIAQUERY *************************************** */
+/* *********************************************** *//* ************************************************* */
+
+/* LARGHEZZA */
+
+@media all and (max-width: 667px){
+  header {
+    width: 100%;
+  }
+  main {
+    width: 100%;
+    flex-direction: column;
+  }
+  footer {
+    width: 100%;
+  }
+  .nameRole {
+    background-color: #0a2738;
+    height: 150px;
+    width: 70%;
+    padding: 30px;
+  }
+  .nameRole h1 {
+    font-size: 35px;
+  }
+  .nameRole h2 {
+    font-size: 18px;
+  }
+
+  .photoId {
+    width: 30%;
+    height: 150px;
+    background-color: #0a2738;
+    border-left: 75px solid transparent;
+    border-bottom: 150px solid #EFF3F2;
+  }
+
+  .photoId img{
+    width: 100px;
+    position: absolute;
+    top: 45px;
+    right: 0px;
+    border: 1px #EFF3F2 solid;
+  }
+
+  /* PARTE PRINCIPALE */
+  /* experience */
+  .competence{
+    width: 100%;
+    padding-top: 30px;
+  }
+  .competence .experience {
+    padding: 18px 0px;
+    border-top: 1px solid #073C5A;
+  }
+  .competence .experience ul li{
+    margin-left: 10px;
+    margin-bottom: 20px;
+    padding: 5px;
+  }
+  .competence .experience ul li small{
+    position: absolute;
+    top: 133px;
+    right: 10px;
+  }
+  /* formation */
+  .competence .formation {
+    margin-bottom: 0px;
+    border-top: 1px solid #073C5A;
+  }
+  .formationContainer .formationItem {
+    width: calc(100%);
+    margin-left: 10px;
+    margin-bottom: 20px;
+    padding: 5px;
+  }
+  /* skill */
+  .competence .skills{
+    border-top: 1px solid #073C5A;
+  }
+
+  .competence .skills ul li {
+    text-align: center;
+    margin-right: 10px;
+    margin-bottom: 25px;
+    width: calc(100% / 3 - 10px);
+    vertical-align: middle;
+  }
+
+  .info {
+    width: 100%;
+    min-width: 350px;
+    padding: 0px 30px;
+  }
+  .info .about, .info .contacts, .info .references {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    padding: 5px;
+    border-bottom: 1px solid #073C5A;
+  }
+}
+
+@media all and (min-width: 668px) and (max-width: 900px){
+  header {
+    width: 95%;
+  }
+  main {
+    width: 95%;
+    flex-direction: column;
+  }
+  .nameRole {
+    background-color: #0a2738;
+    height: 150px;
+    width: 70%;
+    padding: 30px;
+  }
+  .nameRole h1 {
+    font-size: 35px;
+  }
+  .nameRole h2 {
+    font-size: 18px;
+  }
+
+  .photoId {
+    width: 30%;
+    height: 150px;
+    background-color: #0a2738;
+    border-left: 75px solid transparent;
+    border-bottom: 150px solid #EFF3F2;
+  }
+
+  .photoId img{
+    width: 120px;
+    position: absolute;
+    top: 33px;
+    right: 30px;
+    border: 1px #EFF3F2 solid;
+  }
+
+  /* PARTE PRINCIPALE */
+  /* experience */
+  .competence{
+    width: 100%;
+    padding-top: 30px;
+  }
+  .competence .experience {
+    padding: 18px 0px;
+    margin-bottom: 0px;
+    border-top: 1px solid #073C5A;
+  }
+  .competence .experience ul li{
+    margin-left: 10px;
+    margin-bottom: 20px;
+    padding: 5px;
+  }
+  .competence .experience ul li small{
+    position: absolute;
+    top: 22px;
+    right: 140px;
+  }
+  /* formation */
+  .competence .formation {
+    margin-bottom: 0px;
+    border-top: 1px solid #073C5A;
+  }
+  .formationContainer .formationItem {
+    width: calc(100%);
+    margin-left: 10px;
+    margin-bottom: 20px;
+    padding: 5px;
+  }
+  /* skill */
+  .competence .skills{
+    border-top: 1px solid #073C5A;
+  }
+  .competence .skills ul li {
+    text-align: center;
+    margin-right: 10px;
+    margin-bottom: 25px;
+    width: calc(100% / 4 - 10px);
+    vertical-align: middle;
+  }
+
+  .info {
+    width: 100%;
+    min-width: 350px;
+    padding: 0px 30px;
+  }
+  .info .about, .info .contacts, .info .references {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    padding: 5px;
+    border-bottom: 1px solid #073C5A;
+  }
+}
