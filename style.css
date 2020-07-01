@@ -275,12 +275,17 @@ main i {
   padding-bottom: 25px;
   border-bottom: 2px solid #073C5A;
 }
-.info .references {
+.info .languages {
   padding: 25px 25px 0px 0px;
   padding-bottom: 25px;
   border-bottom: 2px solid #073C5A;
 }
-.info .contacts ul, .info .references ul {
+.info .softSkill {
+  padding: 25px 25px 0px 0px;
+  padding-bottom: 25px;
+  border-bottom: 2px solid #073C5A;
+}
+.info .contacts ul, .info .languages ul, .info .softSkill ul {
   margin-left: 20px;
 }
 /* *********************************************** *//* ************************************************* */
@@ -395,11 +400,17 @@ footer {
     min-width: 350px;
     padding: 0px 30px;
   }
-  .info .about, .info .contacts, .info .references {
+  .info .about, .info .contacts, .info .languages, .info .softSkill {
     margin-left: 10px;
     margin-bottom: 20px;
     padding: 5px;
     border-bottom: 1px solid #073C5A;
+  }
+  .info .about p{
+    padding-bottom: 10px;
+  }
+  .info .contacts ul, .info .languages ul, .info .softSkill ul {
+    padding-bottom: 10px;
   }
 }
 
@@ -489,10 +500,16 @@ footer {
     min-width: 350px;
     padding: 0px 30px;
   }
-  .info .about, .info .contacts, .info .references {
+  .info .about, .info .contacts, .info .languages, .info .softSkill {
     margin-left: 10px;
     margin-bottom: 20px;
     padding: 5px;
     border-bottom: 1px solid #073C5A;
+  }
+  .info .about p{
+    padding-bottom: 10px;
+  }
+  .info .contacts ul, .info .languages ul, .info .softSkill ul {
+    padding-bottom: 10px;
   }
 }
