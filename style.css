@@ -195,12 +195,14 @@ main i {
   left: 0;
 }
 
-.formationContainer {
+.formationContainer ul {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
-
+.formationContainer ul li {
+  margin-top: 20px;
+}
 .formationContainer .formationItem {
   width: calc(50% - 20px);
   margin-left: 20px;
@@ -216,6 +218,7 @@ main i {
   width: auto;
   vertical-align: middle;
 }
+
 /* ***************************************** skills ******************************************* */
 .competence .skills {
   padding-top: 23px;
