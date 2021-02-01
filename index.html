@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- richiamo fontawesome -->
     <script src="https://kit.fontawesome.com/15ec4d483d.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
     <link rel="stylesheet" href="style.css">
     <script src="app.js"></script>
-    <title>Portfolio</title>
+    <title>Portfolio Giacomo Suffredini</title>
   </head>
 
     <body>
@@ -27,90 +30,122 @@
         </header>
 
         <main>
-          <section class="competence">
-            <div class="experience">
-              <h3><i class="fas fa-chevron-right"></i> Esperienze</h3>
-              <ul>
-                <li><h5>Full Stack Web Developer Trainee</h5> <small>02-2020 ~ 07-2020</small>
-                <p>Boolean Careers <img src="img/logoBoolean.png" alt=""></p> <h6> Realizzazione di una completa applicazione Web ispirata ad Airbnb, formata da Backend (Autenticazione a più ruoli, Integrazione Payment Provider, Geolocation API) e interfaccia Frontend responsive.</h6></li>
-                <li><h5>Social Media Manager - Web Designer</h5> <small>09-2012 ~ 02-2020</small>
-                <p class="clearfix">Il Pan del Marco <img class="logoIPM"  src="img/scrittaILP.png" alt=""></p> <h6 class="clearfix"><img class="logoGrande" src="img/logoIPM.png" alt=""> Social Media Manager, Design di Grafiche Vettoriali e Raster: Logo, Design Pubblicità e gestione corrispondenza.</h6> </li>
-              </ul>
-            </div>
-            <div class="formation">
-              <h3><i class="fas fa-chevron-right"></i> Formazione</h3>
-              <div class="formationContainer">
-                <ul>
-                  <li class="formationItem"><b>Master Full Stack Developer</b>
-                  <p>Boolean Careers <img src="img/logoBoolean.png" alt=""></p>
-                  <small>Corso professionalizzante per Sviluppatori Web Full Stack con livecoding quotidiano guidato da Senior Developer professionisti. <br> <span>02/2020 - 07/2020</span> </small></li>
-                  <li  class="formationItem"><b>Università Ca'Foscari Venezia</b>
-                  <p>Informatica <img src="img/uLogo.png" alt=""></p>
-                  <small>- Programmazione - Architettura degli Elaboratori - Calcolo - Matematica Discreta - Inglese</small>
-                 </li>
-                  <li  class="formationItem"> <b>The Complete Web Developer Course 2.0 </b> by <b> Rob Percival</b> <img src="img/robPercival.jpg" alt="">
-                  <p>Udemy <img src="img/udemy.svg" alt=""></p>
-                  <small>Next-generation web developer course overflowing with fresh content. Jam-packed with high-quality tutorials. Features the most advanced, hot-off-the-press software versions. <br> <span>2020</span> </small></li>
-                </ul>
+          <div class="row">
+            <div class="col-12 col-md-8">
+              <div class="row">
+                <div class="esperienze col-12">
+                  <h3>Esperienze</h3>
+                  <div class="demia">
+                    <h5>Font-end Web Developer</h5>
+                    <span>09-2020 - 02-2021</span>
+                    <div class="anchor">
+                      <a href="https://www.demia.org/" target="_blank"><p> DEMIA | un'altra definizione creativa </p><img src="img/demia.png" alt="logo Demia" style="width: 20px"></a>
+                    </div>
+                    <p class="thinText">Realizzazione, sviluppo e mantenimento di siti web a partire da progetti Illustrator.</p>
+                  </div>
+                  <div class="booleanTrainee">
+                    <h5>Full Stack Web Developer Trainee</h5>
+                    <span>02-2020 - 07-2020</span>
+                    <div class="anchor">
+
+                      <a href="https://www.boolean.careers/"  target="_blank"><p>Boolean Careers </p><img src="img/logoBoolean.png" alt="logo boolean" style="width: 75px;"></a>
+                    </div>
+                      <p  class="thinText"> Realizzazione di una completa applicazione Web ispirata ad AirBnB, formata da back-end (autenticazione a più ruoli, integrazione Payment Provider, Geolocation API, rilevamento accessi IP) e interfaccia front-end responsive.</p>
+                  </div>
+                  <div class="panDelMarco">
+                    <h5>Social Media Manager - Web Designer</h5>
+                    <span>09-2012 - present</span>
+                    <div class="logoPanDelMarco">
+                      <img class="logoIPM"  src="img/scrittaILP.png" alt="">
+                      <img class="logoGrande" src="img/logoIPM.png" alt="">
+                    </div>
+                    <a href="https://www.facebook.com/ilpandelmarco/" target="_blank"><p>Il Pan del Marco </p></a>
+                    <p class="thinText">Social Media Manager, Design di Grafiche Vettoriali e Raster: Logo, Design Pubblicità e gestione corrispondenza.</p>
+                  </div>
+                </div>
+
+                <div class="formazione col-12">
+                  <div class="row">
+                    <div class="col-12">
+                      <h3 >Formazione</h3>
+                    </div>
+                    <div class="itemFormazione col-12 col-md-6">
+                      <b>Master Full Stack Developer</b>
+                      <p>Boolean Careers <img src="img/logoBoolean.png" alt="logo boolean" style="width: 75px;"></p>
+                      <span>Corso professionalizzante per Sviluppatori Web Full Stack con livecoding quotidiano guidato da Senior Developer professionisti. <br> <span>02/2020 - 07/2020</span> </>
+                    </div>
+                    <div class="itemFormazione  col-12 col-md-6">
+                      <b>Università Ca'Foscari Venezia</b>
+                      <p>Informatica <img src="img/uLogo.png" alt="" style="width: 20px;"></p>
+                      <span>Programmazione - Architettura degli Elaboratori - Calcolo - Matematica Discreta - Inglese</span>
+                    </div>
+                    <div class="itemFormazione col-12 col-md-6">
+                      <b>The Complete Web Developer Course 2.0 </b> by <b> Rob Percival</b> <img src="img/robPercival.jpg" alt=""  style="width: 20px;">
+                      <p>Udemy <img src="img/udemy.svg" alt=""  style="width: 20px;"></p>
+                      <span>Next-generation web developer course overflowing with fresh content. Jam-packed with high-quality tutorials. Features the most advanced, hot-off-the-press software versions. <br> <span>2020</span> </span>
+                    </div>
+                    <div class="itemFormazione col-12 col-md-6">
+                      <b>Istituto Superiore di Studi Musicali Boccherini</b>
+                      <p>Pianoforte <img src="img/boccherini.png" alt=""  style="width:80px;"></p>
+                      <span>Diploma di Solfeggio, Diploma di Storia della Musica, Diploma del 5 anno Vecchio OrdinamentoCampo di studi Pianoforte.</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="skills col-12">
+                    <h3>Skills</h3>
+                    <ul class="listaLinguaggi">
+                      <li><img src="img/html5.svg" alt=""> <p>HTML 5</p></li>
+                      <li><img src="img/css-5.svg" alt=""> <p>CSS3</p></li>
+                      <li><img src="img/Javascript-shield.svg" alt=""> <p>Javascript</p></li>
+                      <li><img src="img/bootstrap-4.svg" alt=""> <p>Bootstrap</p></li>
+                      <li> <img src="img/handlebars-1.svg" alt=""><p>Handlebars</p></li>
+                      <li> <img src="img/mysql.svg" alt=""><p>mySQL</p></li>
+                      <li> <img src="img/php-1.svg" alt=""><p>PHP</p></li>
+                      <li> <img src="img/laravel-2.svg" alt=""><p>Laravel</p></li>
+                      <li> <img src="img/sass-1.svg" alt=""><p>Sass</p></li>
+                      <li> <img src="img/jquery-1.svg" alt=""><p>jQuery</p></li>
+                      <li> <img src="img/ai.svg" alt=""><p>Illustrator</p></li>
+                      <li> <img src="img/ps.png" alt=""><p>Photoshop</p></li>
+                    </ul>
+                </div>
               </div>
             </div>
-            <!-- svg files from: https://worldvectorlogo.com/ -->
-            <div class="skills">
-              <h3><i class="fas fa-chevron-right"></i> Skill</h3>
-              <ul class="listaLinguaggi">
-                <li><img src="img/html5.svg" alt=""> <p>HTML 5</p></li>
-                <li><img src="img/css-5.svg" alt=""> <p>CSS3</p></li>
-                <li><img src="img/Javascript-shield.svg" alt=""> <p>Javascript</p></li>
-                <li><img src="img/bootstrap-4.svg" alt=""> <p>Bootstrap</p></li>
-                <li> <img src="img/handlebars-1.svg" alt=""><p>Handlebars</p></li>
-                <li> <img src="img/mysql.svg" alt=""><p>mySQL</p></li>
-                <li> <img src="img/php-1.svg" alt=""><p>PHP</p></li>
-                <li> <img src="img/laravel-2.svg" alt=""><p>Laravel</p></li>
-                <li> <img src="img/sass-1.svg" alt=""><p>Sass</p></li>
-                <li> <img src="img/jquery-1.svg" alt=""><p>jQuery</p></li>
-                <li> <img src="img/adobe-illustrator-cc.svg" alt=""><p>Illustrator</p></li>
-                <li> <img src="img/photoshop-cc.svg" alt=""><p>Photoshop</p></li>
-              </ul>
+            <!-- sezione a destra -->
+            <div class="sezioneDestra col-12 col-md-4">
+              <div class="row">
+                <div class="about col-12">
+                  <h3>About</h3>
+                  <p class="thinText">Full Stack Web Developer. <span>Appassionato</span> di informatica, tecnologia e web development. Amo leggere, fare hiking, <span>imparare</span>, le sfide e sono sempre alla ricerca di <span> modi per migliorarmi</span>.</p>
+                </div>
+                <div class="contatti col-12">
+                  <h3>Contatti</h3>
+                  <ul class="thinText">
+                    <li><i class="fas fa-phone" aria-hidden="true"></i> su richiesta</li>
+                    <li><i class="fas fa-at" aria-hidden="true"></i> <a href="mailto:jake.suffredini@gmail.com">jake.suffredini@gmail.com</a> </li>
+                    <li><i class="fab fa-github" aria-hidden="true"></i> <a href="https://github.com/JakeShelterwin" target="_blank"> GitHub</a> </li>
+                    <li><i class="fab fa-linkedin-in" aria-hidden="true"></i> <a href="https://www.linkedin.com/in/giacomo-suffredini-0b16181b1/" target="_blank"> LinkedIn</a>  </li>
+                  </ul>
+                </div>
+                <div class="lingue col-12">
+                  <h3>Lingue</h3>
+                  <p class="thinText">Italiano <br> English </p>
+                </div>
+                <div class="softSkill col-12">
+                  <h3>Soft Skill</h3>
+                  <ul class="thinText">
+                    <li>Autonomia</li>
+                    <li>Capacità d'Adattamento</li>
+                    <li>Capacità di Pianificazione</li>
+                    <li>Problem Solving</li>
+                    <li>Team Work</li>
+                    <li>Indipendenza</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-          </section>
-          <section class="info">
-            <div class="about">
-              <h3><i class="fas fa-chevron-right"></i> About</h3>
-              <p>
-                Full Stack Web Developer.
-                 <b>Appassionato </b> di informatica, tecnologia e web development.
-                Amo <b>imparare</b>, le sfide e sono sempre alla ricerca di  <b>modi per migliorarmi</b>.
-              </p>
-            </div>
-            <div class="contacts">
-              <h3><i class="fas fa-chevron-right"></i> Contatti</h3>
-              <ul>
-                <li><i class="fas fa-phone"></i> Su Richiesta</li>
-                <li><i class="fas fa-at"></i> jake.suffredini@gmail.com</li>
-                <li>&nbsp;</li>
-                <li><i class="fab fa-github"></i> <a href="https://github.com/JakeShelterwin"> GitHub</a> </li>
-                <li><i class="fab fa-linkedin-in"></i> <a href="https://www.linkedin.com/in/giacomo-suffredini-0b16181b1/"> LinkedIn</a>  </li>
-              </ul>
-            </div>
-            <div class="languages">
-              <h3><i class="fas fa-chevron-right"></i> Lingue</h3>
-              <ul>
-                <li>Italiano</li>
-                <li>Inglese</li>
-              </ul>
-            </div>
-            <div class="softSkill">
-              <h3><i class="fas fa-chevron-right"></i> Soft Skills</h3>
-              <ul>
-                <li>Autonomia</li>
-                <li>Capacità d'Adattamento</li>
-                <li>Capacità di Pianificazione</li>
-                <li>Problem Solving</li>
-                <li>Team Work</li>
-                <li>Indipendenza</li>
-              </ul>
-            </div>
-          </section>
+
+          </div>
         </main>
 
         <footer>

@@ -11,8 +11,10 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  color: #073C5A;
-      background-image: linear-gradient(to bottom, #073C5A, 15vh, #d2dbdc 15vh, #EFF3F2 100%);
+  /* color: #073C5A; */
+  color: #0a2738;
+  background-image: linear-gradient(to bottom, #073C5A, 15vh, #d2dbdc 15vh, #EFF3F2 100%);
+
 }
 
 .clearfix:after{
@@ -23,35 +25,40 @@ body {
 
 a {
   text-decoration: none;
-  color: #073C5A;
+  color: #0a2738;
 }
-
-a:hover, a:active, a:focus {
+.anchor{
+  position: relative;
+}
+/* a:hover, a:active, a:focus {
     color: #073C5A;
     text-shadow: 1px 1px #000;
-}
+} */
 
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   margin-top: 25px;
   margin-bottom: 25px;
 }
 
-em {
-  color: black;
+.thinText{
+  font-size: 15px;
+  font-weight: 300;
 }
+
 /* *********************************************** *//* ************************************************* */
 /* ***************************************** HEADER ******************************************* */
 /* *********************************************** *//* ************************************************* */
 
 header {
-  width: 95%;
+  width: 100%;
   max-width: 1300px;
   background-color: #EFF3F2;
-  color: #EFF3F2;
+  /* color: #EFF3F2; */
+  color: white;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  font-weight: 800;
+  position: relative;
 }
 
 .identity {
@@ -65,6 +72,7 @@ header {
   justify-content: center;
   flex-direction: column;
   background-color: #0a2738;
+  border-top-left-radius: 15px;
   height: 180px;
   width: 70%;
   padding: 50px;
@@ -72,10 +80,12 @@ header {
 
 .nameRole h1 {
   font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 0;
 }
 .nameRole h2 {
   font-size: 20px;
-  font-weight: lighter;
+  font-weight: 300;
 }
 
 .photoId {
@@ -84,6 +94,7 @@ header {
   background-color: #0a2738;
   border-left: 75px solid transparent;
   border-bottom: 180px solid #EFF3F2;
+  border-top-right-radius: 15px;
 }
 
 .photoId img{
@@ -98,216 +109,237 @@ header {
 /* ***************************************** SEZIONE PRINCIPALE ***************************************** */
 /* *********************************************** *//* ************************************************* */
 main {
-  width: 95%;
-  display: flex;
-  flex-direction: row;
   background-color: #EFF3F2;
-  max-width: 1300px;
 }
 
 main i {
   color: #073C5A;
 }
-/* ***************************************** COMPETENCE ******************************************* */
-.competence{
-  width: 70%;
-  padding-top: 50px;
+p{
+  margin-bottom: 0;
+}
+/*//////////////////////////////// ESPERIENZE ////////////////////////// */
+.esperienze {
+  margin-top: 30px;
+  text-align: justify;
+  /* hyphens: auto; */
+}
+.esperienze h3{
+  font-weight: bold;
+  margin-left: 5%;
+}
+.esperienze h5{
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.esperienze span{
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 200;
+  margin: 5px 0;
+}
+
+.demia,
+.booleanTrainee,
+.panDelMarco{
+  width: 90%;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  margin-left: 5%;
+}
+
+.panDelMarco{
+  position: relative;
+}
+
+.demia a img{
+  position: absolute;
+  top: -1px;
+  left: 293px;
+}
+.booleanTrainee a img{
+  position: absolute;
+  top: 3px;
+  left: 140px;
+}
+
+.demia a:hover p{
+  background: -webkit-linear-gradient(180deg,#f9b000, #ff8925, #ff5f44, #ff3361, #e6007e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 295px;
+}
+.booleanTrainee a:hover p{
+  background: -webkit-linear-gradient(0deg,#0cd977,#006cfa, #001632);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 135px;
+}
+.panDelMarco a:hover p{
+  background: -webkit-linear-gradient(0deg,#ffea2b,#f9b000, #ff8925);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 130px;
+}
+
+.panDelMarco:after{
+  display: block;
+  content: "";
+  padding-bottom: 20px;
+}
+.logoPanDelMarco{
+  position: absolute;
+  top: 37px;
+  left: 155px;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
-
-
-.competence h6{
-  font-size: 14px;
-  font-weight: normal;
-}
-/* ***************************************** EXPERIENCE ******************************************* */
-.competence .experience {
-  padding: 23px 0px;
-  border-top: 2px solid #073C5A;
-  position: relative;
-  margin-bottom: 30px;
-  width: 90%;
-}
-
-.competence .experience h3{
-  width: 140px;
-  background-color: #EFF3F2;
-  position: absolute;
-  top: -13px;
-  left: 0;
-}
-
-.competence .experience ul li{
-  position: relative;
-  margin-left: 20px;
-  margin-bottom: 10px;
-  padding: 10px;
-}
-
-.competence .experience ul li:hover{
-  transform: scale(1.01);
-  /* background-color: #EFF3F2;
-  box-shadow: 0px 2px 7px rgba(93, 93, 93, 0.5); */
-}
-
-.competence .experience ul li small{
+.logoPanDelMarco .logoIPM{
+  width: 50px;
   position: absolute;
   top: 0;
-  right: 10px;
-  text-shadow: 1px 0px rgba(7, 60, 91, 0.5);
-}
-.competence .experience img{
-  height: 18px;
-  width: auto;
-  vertical-align: bottom;
-
-}
-.competence .experience .logoIPM{
-  height: 20px;
-  width: auto;
-  float: right;
-  margin-top: 2px;
-  margin-right: 20px;
-}
-.competence .experience .logoGrande{
-  height: 50px;
-  width: auto;
-  float: right;
-  margin-right: 20px;
-}
-/* ***************************************** FORMATION ******************************************* */
-.competence .formation {
-  padding: 23px 0px;
-  border-top: 2px solid #073C5A;
-  position: relative;
-  margin-bottom: 30px;
-  width: 90%;
-}
-
-.competence .formation h3{
-  width: 150px;
-  background-color: #EFF3F2;
-  position: absolute;
-  top: -13px;
   left: 0;
 }
+.logoPanDelMarco .logoGrande{
+  width: 50px;
+  position: absolute;
+  top: 10px;
+  left: -1px;
+}
 
-.formationContainer ul {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+/*//////////////////////////////// FORMAZIONE ////////////////////////// */
+.formazione {
+  margin: 0;
+  text-align: justify;
+  /* hyphens: auto; */
 }
-.formationContainer ul li {
-  margin-top: 20px;
-}
-.formationContainer .formationItem {
-  width: calc(50% - 20px);
-  margin-left: 20px;
-}
-.formationContainer .formationItem:hover {
-  transform: scale(1.01);
-}
-.formationContainer .formationItem span{
+.formazione h3{
   font-weight: bold;
+  margin-left: 5%;
 }
-.formationContainer img{
-  height: 18px;
-  width: auto;
-  vertical-align: middle;
+.formazione h5{
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 0;
 }
-
-/* ***************************************** skills ******************************************* */
-.competence .skills {
-  padding-top: 23px;
-  border-top: 2px solid #073C5A;
-  position: relative;
-  margin-bottom: 30px;
-  width: 90%;
+.formazione span{
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 200;
+  margin: 5px 0;
 }
-
-.competence .skills h3{
-  width: 70px;
-  background-color: #EFF3F2;
-  position: absolute;
-  top: -13px;
-  left: 0;
+.formazione p{
+  font-weight: 300;
 }
-
-.competence .skills ul {
-  margin-left: 20px;
+.itemFormazione{
+  width: 45%;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  margin-left: 5%;
+}
+.itemFormazione img{
+  margin-left: 5px;
+}
+/*//////////////////////////////// FORMAZIONE ////////////////////////// */
+.skills{
+  margin-top: 15px;
+}
+.skills h3{
+  font-weight: bold;
+  margin-left: 5%;
+}
+.skills ul{
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 5%;
+  padding: 0;
+  width: 90%;
 }
-.competence .skills ul li {
+ .skills ul li {
   text-align: center;
-  margin-right: 10px;
+  margin-top: 10px;
   margin-bottom: 20px;
-  width: calc(100% / 6 - 10px);
+  min-width: 100px;
   vertical-align: middle;
+  font-size: 14px;
+  font-weight: 300;
 }
-.competence .skills ul li img{
-  height: 50px;
-  max-width: 60px;
-  width: auto;
-  vertical-align: middle;
+.skills ul li img {
+    height: 50px;
+    margin-bottom: 5px;
+    max-width: 60px;
+    width: auto;
+    vertical-align: middle;
+}
+/* *********************************************** *//* ************************************************* */
+/* **************************************** SEZIONE ALTRO ***************************************+ */
+/* *********************************************** *//* ************************************************* */
+.about {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  text-align: justify;
+  hyphens: auto;
+}
+.contatti {
+  margin: 0;
+  text-align: justify;
+  hyphens: auto;
+}
+.contatti i{
+    color: #073C5A;
+    margin-right: 4px;
+}
+.sezioneDestra h3{
+  font-weight: bold;
+  margin-left: 10%;
+}
+.about p,
+.lingue p{
+  width: 80%;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  margin-left: 10%;
+}
+.lingue p{
+  width: 80%;
+  padding: 13px 0;
+  margin-left: 10%;
+  margin-bottom: 1rem;
+}
+.about span{
+  font-weight: 500;
+}
+.contatti ul,
+.softSkill ul{
+  width: 80%;
+  padding: 13px 0;
+  margin-left: 10%;
+}
 
-}
 
-/* ***************************************** INFO ******************************************* */
-.info {
-  width: 30%;
-  min-width: 350px;
-  padding: 15px 30px 50px 30px;
-}
-.info h3{
-  margin-bottom: 5px;
-}
-.info .about {
-  padding: 25px 25px 0px 0px;
-  padding-bottom: 25px;
-  border-bottom: 2px solid #073C5A;
-}
-.info .about p{
-  margin-left: 20px;
-}
-.info .contacts {
-  padding: 25px 25px 0px 0px;
-  padding-bottom: 25px;
-  border-bottom: 2px solid #073C5A;
-}
-.info .languages {
-  padding: 25px 25px 0px 0px;
-  padding-bottom: 25px;
-  border-bottom: 2px solid #073C5A;
-}
-.info .softSkill {
-  padding: 25px 25px 0px 0px;
-  padding-bottom: 25px;
-  border-bottom: 2px solid #073C5A;
-}
-.info .contacts ul, .info .languages ul, .info .softSkill ul {
-  margin-left: 20px;
-}
 /* *********************************************** *//* ************************************************* */
 /* **************************************** FOOTER ***************************************+ */
 /* *********************************************** *//* ************************************************* */
 footer {
-  width: 95%;
+  width: 100%;
   max-width: 1300px;
   display: flex;
   justify-content: flex-end;
   flex-direction: row;
   background-color:#EFF3F2 ;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 .footerDecoration{
   width: 30%;
   margin-left: 70%;
   height: 40px;
-  border-left: 23px solid transparent;
+  border-left: 19px solid transparent;
   border-bottom: 40px solid #0a2738;
+  border-bottom-right-radius: 15px;
 }
 /* *********************************************** *//* ************************************************* */
 /* *************************************** AGGIUNTA DI MEDIAQUERY *************************************** */
@@ -315,205 +347,96 @@ footer {
 
 /* LARGHEZZA */
 
-@media all and (max-width: 667px){
-  header {
-    width: 100%;
-  }
-  main {
-    width: 100%;
-    flex-direction: column;
-  }
-  footer {
-    width: 100%;
-  }
-  .nameRole {
-    background-color: #0a2738;
-    height: 150px;
-    width: 70%;
-    padding: 30px;
-  }
-  .nameRole h1 {
-    font-size: 35px;
-  }
-  .nameRole h2 {
-    font-size: 18px;
-  }
+@media all and (max-width: 767px){
+    .nameRole {
+      background-color: #0a2738;
+      height: 150px;
+      width: 70%;
+      padding: 30px;
+    }
+    .nameRole h1 {
+      font-size: 32px;
+    }
+    .nameRole h2 {
+      font-size: 18px;
+    }
 
-  .photoId {
-    width: 30%;
-    height: 150px;
-    background-color: #0a2738;
-    border-left: 75px solid transparent;
-    border-bottom: 150px solid #EFF3F2;
-  }
+    .photoId {
+      width: 30%;
+      height: 150px;
+      background-color: #0a2738;
+      border-left: 75px solid transparent;
+      border-bottom: 150px solid #EFF3F2;
+    }
 
-  .photoId img{
-    width: 100px;
-    position: absolute;
-    top: 45px;
-    right: 0px;
-    border: 1px #EFF3F2 solid;
-  }
-
-  /* PARTE PRINCIPALE */
-  /* experience */
-  .competence{
-    width: 100%;
-    padding-top: 30px;
-  }
-  .competence .experience {
-    padding: 18px 0px;
-    border-top: 1px solid #073C5A;
-  }
-  .competence .experience ul li{
-    margin-left: 10px;
-    margin-bottom: 20px;
-    padding: 5px;
-  }
-  .competence .experience ul li small{
-    position: absolute;
-    top: 133px;
-    right: 10px;
-  }
-  /* formation */
-  .competence .formation {
-    margin-bottom: 0px;
-    border-top: 1px solid #073C5A;
-  }
-  .formationContainer .formationItem {
-    width: calc(100%);
-    margin-left: 10px;
-    padding: 5px;
-  }
-
-  /* skill */
-  .competence .skills{
-    border-top: 1px solid #073C5A;
-  }
-
-  .competence .skills ul li {
-    text-align: center;
-    margin-right: 10px;
-    margin-bottom: 25px;
-    width: calc(100% / 3 - 10px);
-    vertical-align: middle;
-  }
-
-  .info {
-    width: 100%;
-    min-width: 350px;
-    padding: 0px 30px;
-  }
-  .info .about, .info .contacts, .info .languages, .info .softSkill {
-    margin-left: 10px;
-    margin-bottom: 20px;
-    padding: 5px;
-    border-bottom: 1px solid #073C5A;
-  }
-  .info .about p{
-    padding-bottom: 10px;
-  }
-  .info .contacts ul, .info .languages ul, .info .softSkill ul {
-    padding-bottom: 10px;
-  }
+    .photoId img{
+      width: 100px;
+      position: absolute;
+      top: 20px;
+      right: 0px;
+      border: 1px #EFF3F2 solid;
+    }
+    .sezioneDestra h3{
+      margin-left: 5%;
+    }
+    .about p,
+    .lingue p{
+      width: 90%;
+      margin-left: 5%;
+    }
+    .lingue p{
+      width:90%;
+      margin-left: 5%;
+    }
+    .contatti ul,
+    .softSkill ul{
+      width: 90%;
+      margin-left: 5%;
+    }
+    .itemFormazione{
+      width: 90%;
+      padding-top: 5px;
+      padding-bottom: 15px;
+      margin-left: 5%;
+    }
+    .skills ul {
+     justify-content: center;
+   }
 }
 
-@media all and (min-width: 668px) and (max-width: 900px){
-  header {
-    width: 95%;
-  }
-  main {
-    width: 95%;
-    flex-direction: column;
-  }
+@media all and (min-width: 768px) and (max-width: 992px){
   .nameRole {
-    background-color: #0a2738;
-    height: 150px;
-    width: 70%;
-    padding: 30px;
-  }
-  .nameRole h1 {
-    font-size: 35px;
-  }
-  .nameRole h2 {
-    font-size: 18px;
-  }
+      background-color: #0a2738;
+      height: 150px;
+      width: 70%;
+      padding: 30px;
+    }
+    .nameRole h1 {
+      font-size: 35px;
+    }
+    .nameRole h2 {
+      font-size: 18px;
+    }
 
-  .photoId {
-    width: 30%;
-    height: 150px;
-    background-color: #0a2738;
-    border-left: 75px solid transparent;
-    border-bottom: 150px solid #EFF3F2;
-  }
+    .photoId {
+      width: 30%;
+      height: 150px;
+      background-color: #0a2738;
+      border-left: 75px solid transparent;
+      border-bottom: 150px solid #EFF3F2;
+    }
 
-  .photoId img{
-    width: 120px;
-    position: absolute;
-    top: 33px;
-    right: 30px;
-    border: 1px #EFF3F2 solid;
-  }
-
-  /* PARTE PRINCIPALE */
-  /* experience */
-  .competence{
-    width: 100%;
-    padding-top: 30px;
-  }
-  .competence .experience {
-    padding: 18px 0px;
-    margin-bottom: 0px;
-    border-top: 1px solid #073C5A;
-  }
-  .competence .experience ul li{
-    margin-left: 10px;
-    margin-bottom: 20px;
-    padding: 5px;
-  }
-  .competence .experience ul li small{
-    position: absolute;
-    top: 22px;
-    right: 140px;
-  }
-  /* formation */
-  .competence .formation {
-    margin-bottom: 0px;
-    border-top: 1px solid #073C5A;
-  }
-  .formationContainer .formationItem {
-    width: calc(100%);
-    margin-left: 10px;
-    margin-bottom: 20px;
-    padding: 5px;
-  }
-  /* skill */
-  .competence .skills{
-    border-top: 1px solid #073C5A;
-  }
-  .competence .skills ul li {
-    text-align: center;
-    margin-right: 10px;
-    margin-bottom: 25px;
-    width: calc(100% / 4 - 10px);
-    vertical-align: middle;
-  }
-
-  .info {
-    width: 100%;
-    min-width: 350px;
-    padding: 0px 30px;
-  }
-  .info .about, .info .contacts, .info .languages, .info .softSkill {
-    margin-left: 10px;
-    margin-bottom: 20px;
-    padding: 5px;
-    border-bottom: 1px solid #073C5A;
-  }
-  .info .about p{
-    padding-bottom: 10px;
-  }
-  .info .contacts ul, .info .languages ul, .info .softSkill ul {
-    padding-bottom: 10px;
-  }
+    .photoId img{
+      width: 120px;
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      border: 1px #EFF3F2 solid;
+    }
+    .itemFormazione{
+      width: 90%;
+      padding-top: 5px;
+      padding-bottom: 15px;
+      margin-left: 5%;
+    }
 }
