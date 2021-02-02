@@ -156,14 +156,13 @@ p{
 .demia a img{
   position: absolute;
   top: -1px;
-  left: 293px;
+  left: 295px;
 }
 .booleanTrainee a img{
   position: absolute;
   top: 3px;
   left: 140px;
 }
-
 .demia a:hover p{
   background: -webkit-linear-gradient(180deg,#f9b000, #ff8925, #ff5f44, #ff3361, #e6007e);
   -webkit-background-clip: text;
