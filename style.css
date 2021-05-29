@@ -142,7 +142,8 @@ p{
 
 .demia,
 .booleanTrainee,
-.panDelMarco{
+.panDelMarco,
+.adPower{
   width: 90%;
   padding-top: 5px;
   padding-bottom: 15px;
@@ -153,6 +154,11 @@ p{
   position: relative;
 }
 
+.adPower a img{
+  position: absolute;
+  top: 3px;
+  left: 170px;
+}
 .demia a img{
   position: absolute;
   top: -1px;
@@ -163,6 +169,12 @@ p{
   position: absolute;
   top: 3px;
   left: 140px;
+}
+.adPower a:hover p{
+  background: -webkit-linear-gradient(0deg,#000000,#fa0000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 165px;
 }
 .demia a:hover p{
   background: -webkit-linear-gradient(180deg,#f9b000, #ff8925, #ff5f44, #ff3361, #e6007e);
