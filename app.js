@@ -22,7 +22,7 @@ $( document ).ready(function() {
     }
   function mostraTopScroller() {
         var winH = $(window).height() / 2;
-        console.log(winH);
+        /* console.log(winH); */
         if (document.body.scrollTop > winH || document.documentElement.scrollTop > winH){
             $("footer").addClass("scrollato");
         } else {
@@ -39,8 +39,8 @@ $( document ).ready(function() {
 
 
     // Add smooth scrolling to all links
-    $("a").on('click', function(e) {
-        console.log("ciaociao");
+    $("a#toTop").on('click', function(e) {
+        /* console.log("ciaociao"); */
         /// 1
         e.preventDefault();
         // 2
